@@ -1,7 +1,7 @@
 
 import Link from 'next/link';
 
-export default function HomePage() {
+export default function LoginPage() {
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -26,7 +26,18 @@ export default function HomePage() {
         </div>
       </nav>
       <main className="container mt-4">
-        <h1>Welcome to Masket</h1>
+        <h1>Login</h1>
+        <form>
+          <div className="mb-3">
+            <label htmlFor="email" className="form-label">Email address</label>
+            <input type="email" className="form-control" id="email" />
+          </div>
+          <div className="mb-3">
+            <label htmlFor="password" className="form-label">Password</label>
+            <input type="password" className="form-control" id="password" />
+          </div>
+          <button type="submit" className="btn btn-primary">Login</button>
+        </form>
       </main>
     </>
   );
