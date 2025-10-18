@@ -97,6 +97,7 @@
     border-radius: 999px; /* Hotdog shape */
     padding: 12px;
     font-weight: bold;
+    color: white;
   }
   .formCheckInput {
     border-radius: 50% !important;
