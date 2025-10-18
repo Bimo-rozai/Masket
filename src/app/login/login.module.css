@@ -1,0 +1,138 @@
+
+.body {
+    font-family: "Montserrat", sans-serif;
+    background: linear-gradient(
+      to right,
+      #4b0082,
+      #8a2be2
+    ); /* Purple gradient background */
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .loginContainer {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .leftPanel {
+    background-color: #8a2be2; /* Darker purple for the left panel */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .leftPanel::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("/background.jpeg"); /* Placeholder for the background pattern */
+    background-size: cover;
+    opacity: 0.4; /* Adjust opacity to make it subtle */
+    z-index: 0;
+  }
+  .leftPanelContent {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 40px;
+  }
+  .logo {
+    width: 150px; /* Adjust logo size */
+    height: 150px;
+    border-radius: 5px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .topLeftLogo {
+    position: absolute;
+    top: 0px;
+    left: 40px;
+  }
+  .welcomeHeader {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  .rightPanel {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .loginHeader {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .formControl,
+  .inputGroupText {
+    border-radius: 999px; /* Hotdog shape */
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+  }
+  .inputGroupFormControl {
+    border-left: none;
+  }
+  .inputGroupText {
+    border-right: none;
+    background-color: transparent;
+  }
+  .btnPrimary {
+    background-color: #8a2be2;
+    border-color: #8a2be2;
+    border-radius: 999px; /* Hotdog shape */
+    padding: 12px;
+    font-weight: bold;
+  }
+  .formCheckInput {
+    border-radius: 50% !important;
+  }
+  .formCheckInput:checked {
+    background-color: #8a2be2;
+    border-color: #8a2be2;
+  }
+
+  .btnPrimary:hover {
+    background-color: #7b24d4;
+    border-color: #7b24d4;
+  }
+  .btnGoogle {
+    background-color: white;
+    color: #555;
+    border: 1px solid #ddd;
+    border-radius: 999px; /* Hotdog shape */
+    padding: 12px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .googleLogo {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  .formCheckLabel a {
+    color: #8a2be2;
+    text-decoration: none;
+  }
+  .formCheckLabel a:hover {
+    text-decoration: underline;
+  }
+  .textPurple {
+    color: #8a2be2;
+  }
