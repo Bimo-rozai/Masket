@@ -81,7 +81,7 @@ export default function LoginPage() {
               </div>
 
               <p className="text-center text-muted">
-                Don't have an account?{' '}
+                Don&apos;t have an account?{' '}
                 <a href="#" className={`${styles.textPurple} text-decoration-none fw-bold`}>Sign up</a>
               </p>
             </form>
