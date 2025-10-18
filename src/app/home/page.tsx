@@ -1,7 +1,6 @@
-
 import Link from 'next/link';
 
-export default function HomePage() {
+export default function LandingPage() {
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
